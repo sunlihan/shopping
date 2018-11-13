@@ -1,0 +1,13 @@
+.shoppingcart{
+  width: 100%;
+  height:100%;
+  background: white;
+  //display: flex;
+  //-webkit-flex-direction: column;
+   .shoppingcartdiv{
+    -webkit-flex:1;
+    overflow: auto;
+  }
+
+
+}

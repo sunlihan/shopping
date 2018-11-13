@@ -1,0 +1,31 @@
+.foot{
+  display: flex;
+  width:100%;
+  height:rem(162);
+  background: white;
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  li{
+    -webkit-flex: 1;
+    text-align: center;
+    a{
+      color:#7f7f7f;
+      font-size: rem(31);
+      text-decoration: none;
+      padding-top:rem(25);
+      display: inline-block;
+      span{
+        font-size:rem(73);
+      }
+    }
+  }
+  li:hover a{
+    color: #ab2b2b;
+  }
+  li:first-child{
+    a{
+      color: #ab2b2b;
+    }
+  }
+}

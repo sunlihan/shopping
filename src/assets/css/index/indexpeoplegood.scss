@@ -1,0 +1,50 @@
+.peoplegood{
+  width:100%;
+  margin-top:rem(28);
+  background: white;
+  box-sizing: border-box;
+  .peoplegood-title{
+    text-align: center;
+    line-height: rem(129);
+    width:100%;
+    font-size:rem(43);
+    span{
+      color:#7f7f7f;
+    }
+  }
+  .peoplegood-cont{
+    width:100%;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    padding:0 rem(18);
+    .peoplegood-li{
+      width:50%;
+      padding:0 rem(18) rem(69) rem(18);
+      .peoplegood-li-pic{
+         width: rem(488);
+         height:rem(488);
+        img{
+          width:100%;
+          height:100%;
+        }
+      }
+      .peoplegood-li-name{
+        font-size: rem(40);
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        padding-top:rem(28);
+        padding-bottom: rem(19);
+      }
+      .peoplegood-li-jian{
+        font-size:rem(31);
+        color:#999;
+      }
+      .peoplegood-li-price{
+        font-size:rem(33);
+        color: #ab2b2b;
+        padding-top:rem(25);
+      }
+    }
+  }
+}

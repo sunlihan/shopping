@@ -1,0 +1,32 @@
+.goumaidetail{
+  width:100%;
+  padding:rem(45);
+  &>p:first-child{
+    font-size:rem(45);
+    line-height:rem(80);
+  }
+  &>p:nth-child(2){
+    font-size:rem(36);
+    line-height:rem(77);
+    color:#999;
+  }
+  ul{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    li{
+      font-size:rem(31);
+      color:#999;
+      line-height:rem(138);
+    }
+    &>li:first-child{
+      display:flex;
+       &>span:first-child{
+        color:#ab2b2b;
+         font-size:rem(45);
+        padding-right:rem(45);
+       }
+    }
+  }
+}

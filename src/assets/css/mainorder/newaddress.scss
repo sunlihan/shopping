@@ -1,0 +1,52 @@
+.newaddress{
+  width:100%;
+  height:100%;
+}
+.newaddress-body{
+  width:100%;
+  .address-message{
+    width:100%;
+    padding:rem(40);
+    background:white;
+    &>li{
+      width:100%;
+      line-height:rem(130);
+      border-bottom:1px solid #ccc;
+      font-size:rem(40);
+      span{
+        display:inline-block;
+        width:18%;
+        margin-right:rem(60);
+      }
+      input{
+        width:70%;
+        height:rem(100);
+        border:none;
+        outline: none;
+        background:none;
+      }
+      select{
+        width:rem(180);
+        //display:inline-block;
+        border:none;
+        color: #999;
+
+      }
+
+    }
+  }
+  p{
+    width:100%;
+    padding:rem(40);
+    a{
+      display:inline-block;
+      width:100%;
+      line-height: rem(155);
+      font-size: rem(55);
+      color:white;
+      background: #e64340;
+      text-align: center;
+      border:1px solid #ccc;
+    }
+  }
+}

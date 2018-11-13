@@ -1,0 +1,54 @@
+.selectetopic{
+  width:100%;
+  margin-top:rem(28);
+  background: white;
+  box-sizing: border-box;
+  .selectetopic-title{
+    text-align: center;
+    line-height: rem(129);
+    width:100%;
+    font-size:rem(43);
+    span{
+      color:#7f7f7f;
+    }
+  }
+  .selectetopic-cont{
+    width:100%;
+    overflow: auto;
+    .selectetopic-ul{
+      width:210%;
+      display:flex;
+      padding:0 rem(13);
+      .selectetopic-li{
+        padding:0 rem(13);
+        width:70%;
+        .selectetopic-li-pic{
+          display:inline-block;
+          width:100%;
+          height:rem(478);
+          img{
+            width:100%;
+            height:100%;
+          }
+        }
+        .selectetopic-li-title{
+          font-size:rem(39);
+          line-height:rem(90);
+          padding-left: rem(25);
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+        }
+        .selectetopic-li-cont{
+          font-size: rem(31);
+          color:#999;
+          padding-bottom:rem(45);
+          padding-left: rem(25);
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.shoppingcarthead{
+  width:100%;
+  height: rem(112);
+  border-bottom:rem(7) solid #f8f8f8;
+  text-align: center;
+  line-height:rem(112);
+  position: relative;
+  .edit{
+    position: absolute;
+    top:rem(0);
+    left:rem(29);
+    color:#b5272d;
+    font-size:rem(39);
+  }
+  .cart{
+    font-size:rem(39);
+  }
+}

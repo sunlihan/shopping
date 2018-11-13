@@ -1,0 +1,45 @@
+.pintuandetail{
+  width:100%;
+  padding:rem(45) 0;
+  &>p:first-child{
+    font-size:rem(45);
+    line-height:rem(80);
+    padding:0 rem(45);
+  }
+  &>p:nth-child(2){
+    font-size:rem(36);
+    line-height:rem(77);
+    color:#999;
+    padding:0 rem(45);
+  }
+  ul{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background: #9e2d1d;
+    padding:0 rem(45);
+    li{
+      font-size:rem(31);
+      color:white;
+      height:rem(138);
+    }
+    &>li:first-child{
+      display:flex;
+      &>p:first-child{
+        padding-right:rem(35);
+        line-height:rem(138);
+        &>span{
+          font-size:rem(45);
+        }
+      }
+      &>p:nth-child(2){
+        padding:rem(20);
+        line-height:rem(50);
+      }
+    }
+    &>li:nth-child(2){
+      line-height:rem(138);
+    }
+  }
+}

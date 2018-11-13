@@ -1,0 +1,63 @@
+// sass写法
+@function rem($px) {
+  @return $px / 67.5 + rem;
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 微软雅黑;
+}
+html,body{
+  width: 100%;
+  height:100%;
+  background:#f5f5f5;
+}
+ul,li,ol{
+  list-style: none;
+}
+a{
+  display:inline-block;
+  text-decoration: none;
+  color:#000;
+}
+#app{
+  width: 100%;
+  height:100%;
+}
+@import "./index/index.scss"; //首页css
+@import "./index/indexhead.scss"; //首页头部
+@import "./index/indexnav.scss";//首页导航
+@import "./index/indexbargaining.scss";//全民砍价
+@import "./index/indexselectetopic";//精选专题
+@import "./index/indexpeoplegood.scss";//人气推荐
+@import "./index/indexfoot.scss";//首页脚部
+@import "./index/indexgift.scss";//新人礼包
+
+@import "./classify/classify.scss";//分类
+@import "./classify/classifyhead.scss";//分类头部
+@import "./classify/classifybody.scss";//分类内容
+
+@import "./shoppingcart/shoppingcart.scss";//购物车
+@import "./shoppingcart/shoppingcarthead.scss";//购物车头部
+@import "./shoppingcart/shoppingcartbody.scss";//购物车内容
+
+@import "./user/user.scss";//个人
+
+@import "./goods/kanjialiebiao.scss";//砍价列表
+@import "./goods/commonhead.scss";   //相同头部
+@import "./goods/yanxuanzhuanlan.scss"; //严选专栏
+
+@import "./mainorder/mainorder.scss"; //我的订单
+@import "./mainorder/daifukuan.scss";//待付款
+@import "./mainorder/daifahuo.scss";//待发货
+
+
+@import "./goods/detail.scss";//详情
+@import "./mainorder/mainaddress.scss";//我的地址
+@import "./mainorder/newaddress.scss";//新增地址
+@import "./mainorder/sureorder.scss";//确认订单
+@import "./user/login.scss";//登录
+
+
+

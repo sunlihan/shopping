@@ -1,0 +1,33 @@
+.classifybody{
+  width:100%;
+  height: rem(1600);
+  display: flex;
+  .classifybody-cont{
+    width:rem(265);
+    height:100%;
+    .classifybody-left{
+      width:100%;
+      .classifybody-left-title{
+        width:100%;
+        padding:rem(28) 0;
+        span{
+          display:inline-block;
+          width:100%;
+          font-size:rem(40);
+          text-align: center;
+          line-height: rem(100);
+        }
+      }
+      .classifybody-left-title:hover span{
+        color:#9e2d1d;
+        border-left:rem(7) solid #9e2d1d;
+      }
+    }
+
+
+
+
+  }
+
+}
+@import "./classifybodyright.scss";

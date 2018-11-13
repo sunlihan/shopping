@@ -1,0 +1,53 @@
+.address{
+  width:100%;
+  height:100%;
+  display:flex ;
+  flex-direction: column;
+}
+.address-body{
+  -webkit-flex: 1;
+  overflow: auto;
+  &>ul{
+    li{
+      padding:rem(40);
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom:1px solid #ccc;
+      &>span{
+        display:inline-block;
+        width:5%;
+        color:#ab2b2b;
+      }
+      &>p{
+        width:90%;
+        line-height:rem(60);
+        padding:0 rem(40);
+        &>span:first-child{
+          display:block;
+          font-size:rem(40);
+        }
+        &>span:last-child{
+          display:block;
+          font-size:rem(33);
+        }
+      }
+      &>.icon-xiugai{
+        display:inline-block;
+        width:5%;
+        color:#999;
+      }
+    }
+  }
+}
+.address-foot{
+  display:inline-block;
+  width:100%;
+  height:rem(150);
+  background:white;
+  border-top:1px solid #ccc;
+  line-height:rem(150);
+  text-align:center;
+  font-size:rem(46);
+  color:#ab2b2b;
+}
