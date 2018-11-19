@@ -14,7 +14,8 @@
 </template>
 
 <script>
-  import indexhead from '@/components/index/indexhead'
+
+   import indexhead from '@/components/index/indexhead'
   import indexnav from '@/components/index/indexnav'
   import indexbargaining from '@/components/index/indexbargaining'
   import indexselectetopic from '@/components/index/indexselectetopic'
@@ -22,7 +23,7 @@
   import indexgift from '@/components/index/indexgift'
   import indexfoot from '@/components/common/indexfoot'
   import Axios from 'axios'
-  export default {
+    export default {
     components:{
       indexhead,
       indexnav,
@@ -40,9 +41,9 @@
 
     })
     },
-    methods:{
 
-    },
+    methods:{
+       },
     computed:{
 
     }

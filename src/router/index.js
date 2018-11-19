@@ -20,13 +20,15 @@ import address from '@/components/order/mainaddress'//我的地址
 import newaddress from '@/components/order/newaddress'//新增地址
 
 import login from '@/views/login'//登录页面
+import surefukuan from '@/components/order/surefukuan'//确认付款
+
 
 
 
 Vue.use(Router)
 
 export default new Router({
-  mode:'history',
+  // mode:'history',
   routes: [
     {
       path: '/',
@@ -71,6 +73,10 @@ export default new Router({
     {
       path: '/login',
       component:login
+    },
+    {
+      path:'/surefukuan',
+      component:surefukuan
     },
     {
       path: '/mainorder',

@@ -1,17 +1,18 @@
 <template>
   <div class="goumaidetail">
-    <p>连盖收纳</p>
-    <p>连兽收右面</p>
+    <p>{{goumaibasicInfo.name}}</p>
+    <p>{{goumaibasicInfo.characteristic}}</p>
     <ul>
-      <li><span>￥99</span><span>原价￥122</span></li>
-      <li>已售 258</li>
+      <li><span>￥{{goumaibasicInfo.minPrice}}</span><span>原价￥{{goumaibasicInfo.originalPrice}}</span></li>
+      <li>已售{{goumaibasicInfo.stores}}</li>
     </ul>
   </div>
 </template>
 
 <script>
     export default {
-        name: "goumaidetail"
+        name: "goumaidetail",
+      props:['goumaibasicInfo']
     }
 </script>
 

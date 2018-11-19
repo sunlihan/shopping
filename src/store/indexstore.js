@@ -7,11 +7,13 @@ Vue.use(Vuex)
 let store=new Vuex.Store({
   state:{
     datalist:[],            //首页数据
-    classifydata:[],     //分类数据
+    classifydata:[],       //分类数据
     num:1,
     usermess:{},
-
-  },
+    sku:{},
+    defaultadd:{},        //默认地址
+    orderlist:{},         //订单列表
+    },
   getters:{
     // 砍价数据
     kanjialist(state){
@@ -36,7 +38,43 @@ let store=new Vuex.Store({
       return state.classifydata.filter(item=>{
         return item.level===2
       })
-    }
+    },
+    //已关闭
+    // guanbilist(state){
+    //   return state.orderlist.orderList.filter(item=>{
+    //     return item.status===-1
+    //   })
+    // },
+    // //待付款
+    // daifukuanlist(state){
+    //   return state.orderlist.orderList.filter(item=>{
+    //     return item.status===0
+    //   })
+    // },
+    // //待发货
+    // daifahuolist(state){
+    //   return state.orderlist.orderList.filter(item=>{
+    //     return item.status===1
+    //   })
+    // },
+    // //待收货
+    // daishouhuolist(state){
+    //   return state.orderlist.orderList.filter(item=>{
+    //     return item.status===2
+    //   })
+    // },
+    // //待评价
+    // daipingjialist(state){
+    //   return state.orderlist.orderList.filter(item=>{
+    //     return item.status===3
+    //   })
+    // },
+    // //已完成
+    // yiwancheng(state){
+    //   return state.orderlist.orderList.filter(item=>{
+    //     return item.status===4
+    //   })
+    // }
   },
   mutations:{
     // 得到首页的全部数据
@@ -61,8 +99,19 @@ let store=new Vuex.Store({
     },
     usermess(state,data){
       state.usermess=data
+    },
+    //选择sku返回数据
+    sku(state,data){
+      state.sku=data
+    },
+    //默认地址
+    morenadd(state,data){
+      state.defaultadd=data
+    },
+    //所有订单列表
+    mainorder(state,data){
+      state.orderlist=data
     }
-
 
   }
 

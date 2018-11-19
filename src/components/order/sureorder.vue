@@ -1,29 +1,30 @@
 <template>
   <div class="sureorder">
     <div class="samehead">
-      <router-link to="/" class="iconfont icon-arrow-right leftjiantou"></router-link>
+
+      <router-link :to="{path:'/detail', query:{id:getquery.dataid}}" class="iconfont icon-arrow-right leftjiantou"></router-link>
       <p class="samehead-title">确认订单</p>
     </div>
     <div class="sureorder-body">
       <!--<h5 ><span class="add">+</span>新增收货地址<span class="right">></span></h5>-->
-      <ul>
+      <ul  v-for="(item,index) in DefaultAdd" :key="index" v-if="item.isDefault===true">
         <li><span class="iconfont icon-dizhi"></span></li>
-        <li><p>小明明治圆顶流口水了</p><p>北京顺地牢猎手到了</p></li>
-        <li><router-link to="/" class="iconfont icon-arrow-right-copy-copy"></router-link></li>
+        <li><p>{{item.linkMan}}{{item.mobile}}</p><p>{{item.address}}</p></li>
+        <li><router-link to="/mainaddress" class="iconfont icon-arrow-right-copy-copy"></router-link></li>
       </ul>
       <p class="kongyu"></p>
       <h2>商品列表</h2>
       <ul class="ull">
         <li class="i1">
-          <img src="../../assets/images/3.jpg" alt="">
+          <img :src="getquery.datapic" alt="">
         </li>
         <li class="i2">
-          <span>小明</span>
-          <p>枷森罗万象</p>
+          <span>{{getquery.dataname}}</span>
+          <p>{{getquery.databig}}{{getquery.datasmall}}</p>
         </li>
         <li class="i3">
-          <span>￥123</span>
-          <p>x 2222</p>
+          <span>￥{{getquery.dataprice}}</span>
+          <p>x {{getquery.datanum}}</p>
         </li>
       </ul>
       <dl>
@@ -37,20 +38,37 @@
         </dt>
         <dt>
           <span>商品金额</span>
-          <span>￥20</span>
+          <span>￥{{getquery.datanum*getquery.dataprice}}</span>
         </dt>
       </dl>
     </div>
     <div class="sureorder-foot">
-      <span>合计：￥399</span>
-      <router-link to="/">提交订单</router-link>
+      <span>合计：￥{{getquery.datanum*getquery.dataprice}}</span>
+      <router-link to='/surefukuan'>提交订单</router-link>
     </div>
   </div>
 </template>
 
 <script>
     export default {
-        name: "sureorder"
+        name: "sureorder",
+      data(){
+          return{
+           getquery:{},
+            DefaultAdd:[] //地址
+          }
+      },
+      created(){
+        console.log(this.$route.query)
+        this.getquery=this.$route.query
+        this.DefaultAdd=JSON.parse(sessionStorage.getItem("data"))
+        console.log(this.DefaultAdd)
+      },
+
+
+
+
+
     }
 </script>
 

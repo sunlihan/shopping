@@ -16,17 +16,17 @@
     width:100%;
     overflow: auto;
     .selectetopic-ul{
-      width:210%;
+      width:200%;
       display:flex;
       padding:0 rem(13);
       .selectetopic-li{
         padding:0 rem(13);
-        width:70%;
+        width:40%;
         .selectetopic-li-pic{
           display:inline-block;
           width:100%;
           height:rem(478);
-          img{
+          &>img{
             width:100%;
             height:100%;
           }

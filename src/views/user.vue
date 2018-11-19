@@ -16,14 +16,14 @@
         <router-link to="/mainorder" class="ordergoos-top-r iconfont icon-arrow-right-copy-copy"></router-link>
       </p>
       <ul class="ordergoods-ul">
-        <li class="ordergoods-ul-li"><a href="#"><span class="iconfont icon-daizhifudingdan"></span>
-          <p>侍付款</p></a></li>
-        <li class="ordergoods-ul-li"><a href="#"><span class="iconfont icon-daifahuo"></span>
-          <p>侍发货</p></a></li>
-        <li class="ordergoods-ul-li"><a href="#"><span class="iconfont icon-daishouhuo"></span>
-          <p>侍收货</p></a></li>
-        <li class="ordergoods-ul-li"><a href="#"><span class="iconfont icon-daipingjia"></span>
-          <p>侍评价</p></a></li>
+        <li class="ordergoods-ul-li"><router-link to="/daifukuan"><span class="iconfont icon-daizhifudingdan"></span>
+          <p>侍付款</p></router-link></li>
+        <li class="ordergoods-ul-li"><router-link to="/daifahuo"><span class="iconfont icon-daifahuo"></span>
+          <p>侍发货</p></router-link></li>
+        <li class="ordergoods-ul-li"><router-link to="/daifahuo"><span class="iconfont icon-daishouhuo"></span>
+          <p>侍收货</p></router-link></li>
+        <li class="ordergoods-ul-li"><router-link to="/daifahuo"><span class="iconfont icon-daipingjia"></span>
+          <p>侍评价</p></router-link></li>
       </ul>
     </div>
     <!--关于我的所有-->

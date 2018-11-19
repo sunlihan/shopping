@@ -3,7 +3,7 @@
       <p>{{kanjiabasicInfo.name}}</p>
       <p>{{kanjiabasicInfo.characteristic}}</p>
       <ul>
-        <li><p>底价<span>￥{{kanjiabasicInfo.minPrice}}</span></p><span>原价￥{{kanjiabasicInfo.originalPrice}}</span></li>
+        <li><p>底价<span>￥{{kanjiabasicInfo.kanjiaPrice}}</span></p><span>原价￥{{kanjiabasicInfo.originalPrice}}</span></li>
         <li>库存{{kanjiabasicInfo.stores}}</li>
       </ul>
     </div>

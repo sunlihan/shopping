@@ -1,0 +1,5 @@
+接口网址：https://apizza.net/console/project/5bb514ce5f87ce2525fcd1237af4cb58/browse
+
+
+打开服务器（服务器在D:\360安全浏览器下载\FileZilla_3.38.1_win64-setup_bundled.exe）
+服务器   主机：140.143.243.190    用户名：SmallFour     密码：0707
